@@ -40,7 +40,7 @@ app.get('/api/notes/:id', function(request, response) {
 			}
 		})
 });
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
 // return new Promise((resolve, reject) => {
 // 	resolve()
