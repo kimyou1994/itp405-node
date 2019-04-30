@@ -75,7 +75,7 @@ it('should return status of 422 when one of required variable is not filled in t
 
 it('should return status of 204 when deleting note succeed', () => {
 	return frisby
-		.del('http://localhost:8000/api/notes/5')
+		.del('http://localhost:8000/api/notes/4')
 		.expect('status', 204);
 });
 
