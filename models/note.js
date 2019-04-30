@@ -25,6 +25,10 @@ module.exports = sequelize.define('note', {
 			notEmpty: {
 				args: true,
 				msg: 'URL is required'
+			},
+			isUrl: {
+				args: true,
+				msg: 'URL must be url address'
 			}
 		}
 	},
@@ -45,6 +49,14 @@ module.exports = sequelize.define('note', {
 			notEmpty: {
 				args: true,
 				msg: 'Channel is required'
+			},
+			isUrl: {
+				args: true,
+				msg: 'URL must be url address'
+			},
+			contains: {
+				args: 'channel',
+				msg: 'channel url should contain channel'
 			}
 		}
 	},

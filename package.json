@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"start": "node app.js",
-		"test": "git checkout database.sqlite; ./node_modules/jest/bin/jest.js __tests__/api/note-test.js"
+		"test": "git checkout database.sqlite; ./node_modules/jest/bin/jest.js __tests__/api/note-test.js git checkout database.sqlite;"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",
